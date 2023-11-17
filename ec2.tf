@@ -4,6 +4,14 @@ provider "aws" {
   secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
+variable "AWS_SECRET_ACCESS_KEY" {
+  description = "AWS Secret Key"
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  description = "AWS ACCESS Key"
+}
+
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
