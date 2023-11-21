@@ -16,6 +16,6 @@ module "ec2_instance" {
   tags = {
     Terraform   = "true"
     Environment = "dev"
-    Demo        = "yes"
+    Demo        = "internalJH"
   }
 }
